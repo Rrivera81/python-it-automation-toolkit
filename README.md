@@ -6,17 +6,21 @@ This project is being developed incrementally to strengthen my Python fundamenta
 
 ## 🎯 Project Goal
 
-The goal of this project is to build a lightweight IT automation toolkit that can collect system information, perform basic diagnostics, analyze system data, and eventually automate common infrastructure tasks.
+The goal of this project is to build a lightweight IT automation toolkit that can collect system information, perform basic diagnostics, monitor system health, analyze system data, and eventually automate common infrastructure tasks.
 
 I'm using this project to develop practical Python skills that complement my existing experience with IT support, PowerShell, Windows administration, and infrastructure technologies.
 
 ## 🚧 Current Status
 
-**Version 1.0 — System Diagnostics Foundation**
+### Version 1.1 — System Health Monitoring
 
-The current version establishes the foundation of the toolkit and demonstrates basic Python system-information gathering.
+Version 1.1 builds on the original system diagnostics foundation by adding system resource monitoring and Python dependency management.
 
-### Current Capabilities
+### Version 1.0 — System Diagnostics Foundation
+
+The initial version established the foundation of the toolkit and demonstrated basic Python system-information gathering.
+
+Capabilities:
 
 - Detects the operating system
 - Retrieves the OS release/version
@@ -24,14 +28,30 @@ The current version establishes the foundation of the toolkit and demonstrates b
 - Organizes diagnostic functionality into a reusable function
 - Provides structured command-line output
 
+### Version 1.1 — System Health Monitoring
+
+The latest version expands the diagnostic functionality to monitor system resource utilization.
+
+New capabilities:
+
+- Monitors CPU usage
+- Monitors memory usage
+- Monitors disk usage
+- Uses the `psutil` library for system resource information
+- Adds Python dependency management through `requirements.txt`
+- Tests system health information from the command line
+- Provides structured system health output
+- Uses a dedicated Git feature branch and pull request workflow
+
 ## 🛠️ Technologies
 
 - Python 3
+- psutil
 - Git
 - GitHub
 - Visual Studio Code
 
-### Python Concepts Used
+## 🐍 Python Concepts Used
 
 - Modules and imports
 - Functions
@@ -39,14 +59,27 @@ The current version establishes the foundation of the toolkit and demonstrates b
 - f-strings
 - Conditional execution
 - Command-line output
-- Basic system information gathering
+- System information gathering
+- External Python packages
+- Dependency management
+- Basic system resource monitoring
 
-## 📁 Project Structure
+## 📊 Current System Diagnostics
+
+The toolkit currently collects:
+
+- Operating system
+- OS release/version
+- CPU usage
+- Memory usage
+- Disk usage
+
+Example output:
 
 ```text
-python-it-automation-toolkit/
-│
-├── main.py
-├── screenshots/
-├── .gitignore
-└── README.md
+--- System Diagnostics ---
+Operating System: Darwin
+OS Release: 25.6.0
+CPU Usage: 24.5%
+Memory Usage: 71.6%
+Disk Usage: 6.6%
